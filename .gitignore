@@ -92,3 +92,6 @@ _[Ss]cripts
 
 /Libraries/StartMVCAngularJS.Ultilities/bin/*
 /Libraries/StartMVCAngularJS.Ultilities/obj/*
+
+/Libraries/StartMVCAngularJS.Data/bin/*
+/Libraries/StartMVCAngularJS.Data/obj/*
