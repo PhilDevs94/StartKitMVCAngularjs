@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartMVCAngularJS.Service",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartMVCAngularJS.WebApi", "Libraries\StartMVCAngularJS.WebApi\StartMVCAngularJS.WebApi.csproj", "{B28C9A93-416D-404E-A224-3FA564A0F652}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartMVCAngularJS.Data", "Libraries\StartMVCAngularJS.Data\StartMVCAngularJS.Data.csproj", "{1DE84853-A830-42D9-972E-91DC8312AA50}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{B28C9A93-416D-404E-A224-3FA564A0F652}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B28C9A93-416D-404E-A224-3FA564A0F652}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B28C9A93-416D-404E-A224-3FA564A0F652}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DE84853-A830-42D9-972E-91DC8312AA50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DE84853-A830-42D9-972E-91DC8312AA50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DE84853-A830-42D9-972E-91DC8312AA50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DE84853-A830-42D9-972E-91DC8312AA50}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,6 +63,7 @@ Global
 		{6115F5CC-E7D0-4272-9B58-815D5744D50B} = {A3052577-6807-46BF-8F40-D2E1C6238518}
 		{83D0BFC6-48D2-4D8A-8679-B6BAB5A8E979} = {A3052577-6807-46BF-8F40-D2E1C6238518}
 		{B28C9A93-416D-404E-A224-3FA564A0F652} = {A3052577-6807-46BF-8F40-D2E1C6238518}
+		{1DE84853-A830-42D9-972E-91DC8312AA50} = {A3052577-6807-46BF-8F40-D2E1C6238518}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {625B7F5C-63C0-4117-8B7C-76869E2090D0}

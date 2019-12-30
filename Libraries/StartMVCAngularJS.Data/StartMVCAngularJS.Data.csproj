@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4142FA77-8640-4C16-98FE-60DAA9AE0B0B}</ProjectGuid>
+    <ProjectGuid>{1DE84853-A830-42D9-972E-91DC8312AA50}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>StartMVCAngularJS.Core</RootNamespace>
-    <AssemblyName>StartMVCAngularJS.Core</AssemblyName>
+    <RootNamespace>StartMVCAngularJS.Data</RootNamespace>
+    <AssemblyName>StartMVCAngularJS.Data</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -57,35 +57,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataContext\IDataContext.cs" />
-    <Compile Include="DataContext\IDataContextAsync.cs" />
-    <Compile Include="DataObject\ApplicationUser.cs" />
-    <Compile Include="DataObject\Entities\EntityDto.cs" />
-    <Compile Include="DataObject\People\PersonDto.cs" />
-    <Compile Include="DataObject\Tasks\TaskDto.cs" />
-    <Compile Include="Enum\ObjectState.cs" />
-    <Compile Include="Enum\PersonState.cs" />
-    <Compile Include="Enum\TaskState.cs" />
-    <Compile Include="Infrastructure\IObjectState.cs" />
+    <Compile Include="DataContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\IQueryFluent.cs" />
-    <Compile Include="Repositories\IQueryObject.cs" />
-    <Compile Include="Repositories\IRepository.cs" />
-    <Compile Include="Repositories\IRepositoryAsync.cs" />
-    <Compile Include="UnitOfWork\IUnitOfWork.cs" />
-    <Compile Include="UnitOfWork\IUnitOfWorkAsync.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\StartMVCAngularJS.Ultilities\StartMVCAngularJS.Ultilities.csproj">
-      <Project>{6115F5CC-E7D0-4272-9B58-815D5744D50B}</Project>
-      <Name>StartMVCAngularJS.Ultilities</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
