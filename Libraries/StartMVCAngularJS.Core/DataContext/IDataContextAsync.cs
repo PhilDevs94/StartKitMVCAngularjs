@@ -1,5 +1,7 @@
-﻿using System;
+﻿using StartMVCAngularJS.Core.Infrastructure;
+using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -13,6 +15,7 @@ namespace StartMVCAngularJS.Core.DataContext
         {
             Task<int> SaveChangesAsync(CancellationToken cancellationToken);
             Task<int> SaveChangesAsync();
+            DbSet<IObjectState> Set<T>();
         }
     }
 }

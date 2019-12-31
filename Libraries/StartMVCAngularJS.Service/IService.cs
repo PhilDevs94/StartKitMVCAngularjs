@@ -1,14 +1,16 @@
 ﻿using StartMVCAngularJS.Core.Infrastructure;
+using StartMVCAngularJS.Core.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
-namespace StartMVCAngularJS.Core.Repositories
+namespace StartMVCAngularJS.Service
 {
-    public interface IRepository<TEntity> where TEntity : class, IObjectState
+    public interface IService<TEntity> where TEntity : IObjectState
     {
         TEntity Find(params object[] keyValues);
         IQueryable<TEntity> SelectQuery(string query, params object[] parameters);
@@ -19,6 +21,9 @@ namespace StartMVCAngularJS.Core.Repositories
         void Update(TEntity entity);
         void Delete(object id);
         void Delete(TEntity entity);
-        IQueryable<TEntity> Queryable();
+        Task<TEntity> FindAsync(params object[] keyValues);
+        Task<TEntity> FindAsync(CancellationToken cancellationToken, params object[] keyValues);
+        Task<bool> DeleteAsync(params object[] keyValues);
+        Task<bool> DeleteAsync(CancellationToken cancellationToken, params object[] keyValues);
     }
 }

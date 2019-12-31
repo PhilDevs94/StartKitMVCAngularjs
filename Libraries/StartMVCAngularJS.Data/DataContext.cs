@@ -48,5 +48,15 @@ namespace StartMVCAngularJS.Data
             var changesAsync = await base.SaveChangesAsync(cancellationToken);
             return changesAsync;
         }
+
+        void IDataContext.SyncObjectState<TEntity>(TEntity entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void SyncObjectsStatePostCommit()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
