@@ -1,7 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Web.Http;
+using Microsoft.AspNet.OData.Builder;
+using Microsoft.AspNet.OData.Extensions;
+using StartMVCAngularJS.Domain.ViewModels;
 
 namespace StartMVCAngularJS
 {
@@ -12,13 +13,13 @@ namespace StartMVCAngularJS
             // Web API configuration and services
 
             // Web API routes
-            config.MapHttpAttributeRoutes();
-
-            config.Routes.MapHttpRoute(
-                name: "DefaultApi",
-                routeTemplate: "api/{controller}/{id}",
-                defaults: new { id = RouteParameter.Optional }
-            );
+            var builder = new ODataConventionModelBuilder();
+            config.Count().Filter().OrderBy().Expand().Select().MaxTop(null);
+            builder.EntitySet<PersonViewModel>("Person");
+            builder.EntitySet<TaskViewModel>("Task");
+            config.Formatters.Remove(config.Formatters.XmlFormatter);
+            config.Formatters.JsonFormatter.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+            config.MapODataServiceRoute("odata", "odata", builder.GetEdmModel());
         }
     }
 }
