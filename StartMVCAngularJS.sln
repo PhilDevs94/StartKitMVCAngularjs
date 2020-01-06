@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartMVCAngularJS", "StartMVCAngularJS\StartMVCAngularJS.csproj", "{F1771361-E2FC-4F50-970A-988CFB06151C}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{A3052577-6807-46BF-8F40-D2E1C6238518}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartMVCAngularJS.Core", "Libraries\StartMVCAngularJS.Core\StartMVCAngularJS.Core.csproj", "{4142FA77-8640-4C16-98FE-60DAA9AE0B0B}"
@@ -17,16 +15,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartMVCAngularJS.Service",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartMVCAngularJS.Data", "Libraries\StartMVCAngularJS.Data\StartMVCAngularJS.Data.csproj", "{1DE84853-A830-42D9-972E-91DC8312AA50}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartMVCAngularJS.Web", "StartMVCAngularJS.Web\StartMVCAngularJS.Web.csproj", "{EBD9442A-2256-4606-B945-BF3CC495EE57}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F1771361-E2FC-4F50-970A-988CFB06151C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F1771361-E2FC-4F50-970A-988CFB06151C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F1771361-E2FC-4F50-970A-988CFB06151C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F1771361-E2FC-4F50-970A-988CFB06151C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4142FA77-8640-4C16-98FE-60DAA9AE0B0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4142FA77-8640-4C16-98FE-60DAA9AE0B0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4142FA77-8640-4C16-98FE-60DAA9AE0B0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -47,6 +43,10 @@ Global
 		{1DE84853-A830-42D9-972E-91DC8312AA50}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1DE84853-A830-42D9-972E-91DC8312AA50}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1DE84853-A830-42D9-972E-91DC8312AA50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBD9442A-2256-4606-B945-BF3CC495EE57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBD9442A-2256-4606-B945-BF3CC495EE57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBD9442A-2256-4606-B945-BF3CC495EE57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBD9442A-2256-4606-B945-BF3CC495EE57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

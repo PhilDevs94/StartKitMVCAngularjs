@@ -74,9 +74,9 @@ _[Ss]cripts
 *.ncrunchsolution
 *.dot[Cc]over
 /.vs
-/StartMVCAngularJS/bin/*
-/StartMVCAngularJS/obj/*
-/StartMVCAngularJS/App_Data/*
+/StartMVCAngularJS.Web/bin/*
+/StartMVCAngularJS.Web/obj/*
+/StartMVCAngularJS.Web/App_Data/*
 
 /Libraries/StartMVCAngularJS.Core/bin/*
 /Libraries/StartMVCAngularJS.Core/obj/*

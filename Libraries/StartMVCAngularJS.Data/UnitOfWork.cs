@@ -20,7 +20,7 @@ namespace StartMVCAngularJS.Data
     {
         #region Private Fields
 
-        private IDataContextAsync _dataContext;
+        public IDataContextAsync _dataContext;
         private bool _disposed;
         private ObjectContext _objectContext;
         private DbTransaction _transaction;

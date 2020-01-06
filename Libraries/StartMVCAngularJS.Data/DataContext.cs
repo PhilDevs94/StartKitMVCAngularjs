@@ -1,8 +1,10 @@
 ﻿using Microsoft.AspNet.Identity.EntityFramework;
 using StartMVCAngularJS.Core.DataContext;
+using StartMVCAngularJS.Core.DataContext.Repository.Pattern.DataContext;
 using StartMVCAngularJS.Core.DataObject;
 using StartMVCAngularJS.Core.DataObject.People;
 using StartMVCAngularJS.Core.DataObject.Tasks;
+using StartMVCAngularJS.Core.Infrastructure;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -13,7 +15,7 @@ using System.Threading.Tasks;
 
 namespace StartMVCAngularJS.Data
 {
-    public class DataContext : IdentityDbContext<ApplicationUser>, IDataContext
+    public class DataContext : IdentityDbContext<ApplicationUser>, IDataContext, IDataContextAsync
     {
         private readonly Guid _instanceId;
 
@@ -55,6 +57,11 @@ namespace StartMVCAngularJS.Data
         }
 
         public void SyncObjectsStatePostCommit()
+        {
+            throw new NotImplementedException();
+        }
+
+        DbSet<IObjectState> IDataContextAsync.Set<T>()
         {
             throw new NotImplementedException();
         }

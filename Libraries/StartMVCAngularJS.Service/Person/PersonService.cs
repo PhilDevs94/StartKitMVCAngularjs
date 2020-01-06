@@ -1,5 +1,6 @@
 ﻿using StartMVCAngularJS.Core.DataObject.People;
 using StartMVCAngularJS.Core.Repositories;
+using StartMVCAngularJS.Domain.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +15,7 @@ namespace StartMVCAngularJS.Service.Person
         public interface IPersonService : IService<PersonDto>
         {
             IQueryable<PersonDto> GetAllPeople();
-            Task<IQueryable<PersonDto>> GetAllPeopleAsync();
+            Task<IQueryable<PersonViewModel>> GetAllPeopleAsync();
         }
         private readonly IRepositoryAsync<PersonDto> _repository;
 
@@ -22,9 +23,14 @@ namespace StartMVCAngularJS.Service.Person
         {
             _repository = repository;
         }
-        public Task<IQueryable<PersonDto>> GetAllPeopleAsync()
+        public Task<IQueryable<PersonViewModel>> GetAllPeopleAsync()
         {
-            return Task.Run(() => GetAllPeople());
+            return Task.Run(() => GetAllPeople()
+            .Select(x => new PersonViewModel()
+            {
+                Id = x.Id,
+                Name = x.Name
+            }));
         }
         public IQueryable<PersonDto> GetAllPeople()
         {
