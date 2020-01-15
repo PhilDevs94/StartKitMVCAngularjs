@@ -323,6 +323,7 @@
     <Content Include="Views\Home\App.cshtml" />
     <Content Include="Views\Task\Index.cshtml" />
     <Content Include="Views\Home\SideBar.cshtml" />
+    <Content Include="Views\Home\Header.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

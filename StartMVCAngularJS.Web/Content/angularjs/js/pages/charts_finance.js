@@ -1,4 +1,4 @@
-angular.module('newApp').factory('chartFinanceService', function () {
+angular.module('App').factory('chartFinanceService', function () {
 
     var init = function () {
 

@@ -1,5 +1,5 @@
 ﻿
-angular.module('newApp')
+angular.module('App')
 .directive('ngViewClass', function ($location) {
     return {
         link: function (scope, element, attrs, controllers) {

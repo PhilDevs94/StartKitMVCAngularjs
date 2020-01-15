@@ -1,4 +1,4 @@
-angular.module('newApp').factory('dashboardService', function() {
+angular.module('App').factory('dashboardService', function() {
 
     var dashboard = {};
     dashboard.init = function() {

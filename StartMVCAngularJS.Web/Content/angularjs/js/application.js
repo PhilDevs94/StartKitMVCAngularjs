@@ -21,7 +21,7 @@ var start = delta = end = 0;
 
 $.cookie.defaults.path = '/';
 
-angular.module('newApp').factory('applicationService', ['pluginsService', function (pluginsService) {
+angular.module('App').factory('applicationService', ['pluginsService', function (pluginsService) {
 
     $(window).load(function () {
         "use strict";

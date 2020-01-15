@@ -1,4 +1,4 @@
-angular.module('newApp').factory('layoutApiService', ["applicationService",function(applicationService) {
+angular.module('App').factory('layoutApiService', ["applicationService",function(applicationService) {
 
    var init = function() {
 

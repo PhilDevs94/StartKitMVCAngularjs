@@ -1,5 +1,5 @@
 
-angular.module('newApp')
+angular.module('App')
   .factory('builderService', ['applicationService', function (applicationService) {
 
 

@@ -1,5 +1,5 @@
 //******************************** CHAT MENU SIDEBAR ******************************//
-angular.module('newApp')
+angular.module('App')
   .factory('quickViewService', [function () {
 
       function quickviewSidebar() {

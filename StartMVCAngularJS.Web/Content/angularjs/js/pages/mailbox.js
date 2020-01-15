@@ -1,4 +1,4 @@
-angular.module('newApp').factory('mailBoxService', ['applicationService', function (applicationService) {
+angular.module('App').factory('mailBoxService', ['applicationService', function (applicationService) {
 
     var service = {};
 

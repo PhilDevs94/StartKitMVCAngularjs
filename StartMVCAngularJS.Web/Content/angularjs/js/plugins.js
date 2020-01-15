@@ -1,4 +1,4 @@
-angular.module('newApp').factory('pluginsService', [function () {
+angular.module('App').factory('pluginsService', [function () {
 
     /* ==========================================================*/
     /* PLUGINS                                                   */

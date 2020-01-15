@@ -1,4 +1,4 @@
-angular.module('newApp').factory('chartService', function () {
+angular.module('App').factory('chartService', function () {
 
     function init() {
 
