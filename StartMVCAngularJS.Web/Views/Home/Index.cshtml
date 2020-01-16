@@ -42,12 +42,13 @@
     <!-- END LAYOUT STYLE -->
     <script src="~/Content/plugins/modernizr/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 </head>
-<body ng-app="newApp" class="fixed-topbar fixed-sidebar theme-sdtl color-default" ng-controller="mainCtrl">
+<body ng-app="newApp" id="newApp" class="newApp fixed-topbar fixed-sidebar theme-sdtl color-default" ng-controller="mainCtrl">
     <div ng-spinner-loader class="page-spinner-loader">
         <div class="bounce1"></div>
         <div class="bounce2"></div>
         <div class="bounce3"></div>
     </div>
+
     <!--Nesscesary jquery things to run with angularjs-->
     <script src="~/Content/plugins/jquery/jquery-3.1.0.min.js"></script>
     <script src="~/Content/plugins/jquery/jquery-migrate-3.0.0.min.js"></script>
@@ -136,17 +137,24 @@
 
 
     <!--The Angularjs things to import-->
-    <script src="~/Content/angularjs/plugins/angular/angular.js"></script>
+    <script src="~/Content/angular-1.7.9/angular.js"></script>
     <script src="~/Content/angularjs/plugins/json3/lib/json3.js"></script>
-    <script src="~/Content/angularjs/plugins/angular-resource/angular-resource.js"></script>
-    <script src="~/Content/angularjs/plugins/angular-cookies/angular-cookies.js"></script>
-    <script src="~/Content/angularjs/plugins/angular-sanitize/angular-sanitize.js"></script>
-    <script src="~/Content/angularjs/plugins/angular-animate/angular-animate.js"></script>
-    <script src="~/Content/angularjs/plugins/angular-touch/angular-touch.js"></script>
-    <script src="~/Content/angularjs/plugins/angular-route/angular-route.js"></script>
+    <script src="~/Content/angular-1.7.9/angular-aria.js"></script>
+    <script src="~/Content/angular-1.7.9/angular-resource.js"></script>
+    <script src="~/Content/angular-1.7.9/angular-cookies.js"></script>
+    <script src="~/Content/angular-1.7.9/angular-animate.js"></script>
+    <script src="~/Content/angular-1.7.9/angular-sanitize.js"></script>
+    <script src="~/Content/angular-1.7.9/angular-touch.js"></script>
+    <script src="~/Content/angular-1.7.9/angular-route.js"></script>
+    <script src="~/Content/angular-1.7.9/angular-messages.js"></script>
+    <script src="~/Content/js/block-ui/dist/angular-block-ui.js"></script>
+    <script src="~/Content/js/toaster.min.js"></script>
+    <script src="~/Content/js/sweetalert.min.js"></script>
+    <script src="~/Content/js/quill.js"></script>
     <script src="~/Content/angularjs/plugins/angular-bootstrap/ui-bootstrap-tpls-0.12.1.js"></script>
-    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+
     <!--Custom angularjs import-->
+    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
     <script src="~/App/app/app.js"></script>
     <script src="~/App/app/mainCtrl.js"></script>
     <script src="~/App/directives/ngViewClass.js"></script>
