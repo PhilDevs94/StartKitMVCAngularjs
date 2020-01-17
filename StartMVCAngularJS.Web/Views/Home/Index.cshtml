@@ -42,13 +42,15 @@
     <!-- END LAYOUT STYLE -->
     <script src="~/Content/plugins/modernizr/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 </head>
-<body ng-app="newApp" id="newApp" class="newApp fixed-topbar fixed-sidebar theme-sdtl color-default" ng-controller="mainCtrl">
-    <div ng-spinner-loader class="page-spinner-loader">
-        <div class="bounce1"></div>
-        <div class="bounce2"></div>
-        <div class="bounce3"></div>
-    </div>
+<body ng-app="newApp" id="newApp" class="fixed-topbar fixed-sidebar theme-sdtl color-default dashboard" ng-class="{'app-header-fixed':app.settings.headerFixed, 'app-aside-fixed':app.settings.asideFixed, 'app-aside-folded':app.settings.asideFolded, 'app-aside-dock':app.settings.asideDock, 'container':app.settings.container}" ui-view ng-controller="mainCtrl">
 
+    <div class="loader-overlay">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
     <!--Nesscesary jquery things to run with angularjs-->
     <script src="~/Content/plugins/jquery/jquery-3.1.0.min.js"></script>
     <script src="~/Content/plugins/jquery/jquery-migrate-3.0.0.min.js"></script>
@@ -138,6 +140,7 @@
 
     <!--The Angularjs things to import-->
     <script src="~/Content/angular-1.7.9/angular.js"></script>
+    <script src="~/App/app/app.js"></script>
     <script src="~/Content/angularjs/plugins/json3/lib/json3.js"></script>
     <script src="~/Content/angular-1.7.9/angular-aria.js"></script>
     <script src="~/Content/angular-1.7.9/angular-resource.js"></script>
@@ -153,10 +156,36 @@
     <script src="~/Content/js/quill.js"></script>
     <script src="~/Content/angularjs/plugins/angular-bootstrap/ui-bootstrap-tpls-0.12.1.js"></script>
 
+
+
+
     <!--Custom angularjs import-->
     <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
-    <script src="~/App/app/app.js"></script>
+    <script src="~/App/directives/oclazyload/dist/ocLazyLoad.js"></script>
+    <script src="~/App/app/app.config.lazyload.js"></script>
+    <script src="~/App/directives/ui-butterbar.js"></script>
+    <script src="~/App/directives/setnganimate.js"></script>
+    <script src="~/App/js/ngStorage.js"></script>
+    <script src="~/App/directives/ui-focus.js"></script>
+    <script src="~/App/directives/ui-fullscreen.js"></script>
+    <script src="~/App/directives/ui-jq.js"></script>
+    <script src="~/App/directives/ui-module.js"></script>
+    <script src="~/App/directives/ui-nav.js"></script>
+    <script src="~/App/directives/ui-scroll.js"></script>
+    <script src="~/App/directives/ui-shift.js"></script>
+    <script src="~/App/directives/ui-load.js"></script>
+    <script src="~/App/directives/ui-toggleclass.js"></script>
+    <script src="~/App/admin/layout1/angularjs/js/pages/mailbox.js"></script>
+    <script src="~/App/admin/layout1/angularjs/js/pages/layouts_api.js"></script>
+    <script src="~/App/admin/layout1/angularjs/js/pages/dashboard.js"></script>
+    <script src="~/App/admin/layout1/angularjs/js/pages/charts_finance.js"></script>
+    <script src="~/App/admin/layout1/angularjs/js/pages/charts.js"></script>
+    <script src="~/App/admin/layout1/angularjs/js/builder.js"></script>
+    <script src="~/App/admin/layout1/angularjs/js/quickview.js"></script>
+    <script src="~/App/admin/layout1/angularjs/js/plugins.js"></script>
+    <script src="~/App/admin/layout1/angularjs/js/application.js"></script>
     <script src="~/App/app/mainCtrl.js"></script>
+    <script src="~/App/app/app.config.js"></script>
     <script src="~/App/directives/ngViewClass.js"></script>
 
 </body>

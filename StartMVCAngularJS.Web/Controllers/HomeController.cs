@@ -25,5 +25,13 @@ namespace StartMVCAngularJS.Web.Controllers
         {
             return PartialView();
         }
+        public ActionResult Dashboard()
+        {
+            return PartialView();
+        }
+        public ActionResult Setting()
+        {
+            return PartialView();
+        }
     }
 }

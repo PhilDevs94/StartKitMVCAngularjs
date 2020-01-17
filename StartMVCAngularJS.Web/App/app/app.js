@@ -17,17 +17,15 @@ var MakeApp = angular
     'ngResource',
     'ngSanitize',
     'ngTouch',
-    'ngStorage',
-    'ui.router',
-    'ui.bootstrap',
-    'ui.utils',
-    'ui.load',
-    'ui.jq',
-    'oc.lazyLoad',
-    'pascalprecht.translate',
+      'ngStorage',
+      'ui.bootstrap',
+      'ui.load',
+      'ui.jq',
+      'oc.lazyLoad',
+      'pascalprecht.translate',
     'toaster',
     'blockUI',
-    'ngQuill'
+ 
   ]);
 
 
