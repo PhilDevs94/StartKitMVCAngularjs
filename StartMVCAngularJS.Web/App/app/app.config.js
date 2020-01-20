@@ -1,5 +1,3 @@
-// config
-
 var app =
     angular.module('newApp')
         .config(
@@ -16,6 +14,7 @@ var app =
                     app.value = $provide.value;
                 }
             ]);
+// Translate part, if you want to use multiple languages
 //  .config(['$translateProvider', function($translateProvider){
 //    // Register a loader for the static files
 //    // So, the module will search missing translation tables under the specified urls.

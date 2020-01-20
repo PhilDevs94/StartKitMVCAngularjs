@@ -7,7 +7,7 @@ angular.module('newApp')
    * value: array of the css js file located
    */
   .constant('JQ_CONFIG', {
-                      
+      moment: [ '../../Content/js/moment.js']    
     }
   )
   .constant('MODULE_CONFIG', [

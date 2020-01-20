@@ -1,6 +1,6 @@
 ﻿angular.module('newApp').controller('mainCtrl',
-    ['$scope', 'applicationService', 'quickViewService', 'builderService', 'pluginsService', '$location',
-        function ($scope, applicationService, quickViewService, builderService, pluginsService, $location) {
+    ['$scope', 'applicationService', 'quickViewService', 'builderService', 'pluginsService', '$location', '$localStorage',
+        function ($scope, applicationService, quickViewService, builderService, pluginsService, $location, $localStorage) {
             $(document).ready(function () {
                 applicationService.init();
                 quickViewService.init();
@@ -30,9 +30,21 @@
                 else {
                     $('body').removeClass('dashboard');
                 }
-
             });
+            $scope.app = {
+                name: 'Start kit application',
+                version: '0.1.0',
+                setting: {
+                    headerFixed: false,
+                    asideFixed: false,
+                    asideFolded: false,
+                    asideDock: false,
+                    container: false
+                }
+            }
+            $scope.setting = {
 
+            }
             $scope.isActive = function (viewLocation) {
                 return viewLocation === $location.path();
             };
