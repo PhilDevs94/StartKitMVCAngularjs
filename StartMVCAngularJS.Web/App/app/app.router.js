@@ -57,7 +57,7 @@ angular.module('newApp')
                     templateUrl: '/account/register',
                     resolve: {
                         deps: ['uiLoad', function (uiLoad) {
-                            return uiLoad.load('/App/ctrl/registerCtrl.js'); // Resolve promise and load before view 
+                            return uiLoad.load('/App/ctrl/Register/registerCtrl.js'); // Resolve promise and load before view 
                         }]
                     }
                 });
