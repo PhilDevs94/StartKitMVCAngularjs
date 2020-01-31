@@ -1,198 +1,268 @@
-﻿<div class="sidebar">
-    <div class="logopanel">
-        <h1>
-            <a href="dashboard.html"></a>
-        </h1>
+﻿      <!-- navbar header -->
+<div class="navbar-header {{app.settings.navbarHeaderColor}}">
+    <button class="pull-right visible-xs dk" ui-toggle-class="show" data-target=".navbar-collapse">
+        <i class="glyphicon glyphicon-cog"></i>
+    </button>
+    <button class="pull-right visible-xs" ui-toggle-class="off-screen" data-target=".app-aside" ui-scroll-to="app">
+        <i class="glyphicon glyphicon-align-justify"></i>
+    </button>
+    <!-- brand -->
+    <a href="#/" class="navbar-brand text-lt">
+        <i class="fa fa-btc"></i>
+        <img src="img/logo.png" alt="." class="hide">
+        <span class="hidden-folded m-l-xs">{{app.name}}</span>
+    </a>
+    <!-- / brand -->
+</div>
+<!-- / navbar header -->
+<!-- navbar collapse -->
+<div class="collapse pos-rlt navbar-collapse box-shadow {{app.settings.navbarCollapseColor}}">
+    <!-- buttons -->
+    <div class="nav navbar-nav hidden-xs">
+        <a href class="btn no-shadow navbar-btn" ng-click="app.settings.asideFolded = !app.settings.asideFolded">
+            <i class="fa {{app.settings.asideFolded ? 'fa-indent' : 'fa-dedent'}} fa-fw"></i>
+        </a>
+        <a href class="btn no-shadow navbar-btn" ui-toggle-class="show" target="#aside-user">
+            <i class="icon-user fa-fw"></i>
+        </a>
     </div>
-    <div class="sidebar-inner">
-        <div class="sidebar-top">
-            <form action="search-result.html" method="post" class="searchform" id="search-results">
-                <input type="text" class="form-control" name="keyword" placeholder="Search...">
-            </form>
-            <div class="userlogged clearfix">
-                <i class="icon icons-faces-users-01"></i>
-                <div class="user-details">
-                    <h4>Mike Mayers</h4>
-                    <div class="dropdown user-login">
-                        <button class="btn btn-xs dropdown-toggle btn-rounded" type="button" data-toggle="dropdown" data-hover="dropdown" data-close-others="true" data-delay="300">
-                            <i class="online"></i><span>Available</span><i class="fa fa-angle-down"></i>
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a href="#"><i class="busy"></i><span>Busy</span></a></li>
-                            <li><a href="#"><i class="turquoise"></i><span>Invisible</span></a></li>
-                            <li><a href="#"><i class="away"></i><span>Away</span></a></li>
-                        </ul>
+    <!-- / buttons -->
+    <!-- link and dropdown -->
+    <ul class="nav navbar-nav hidden-sm">
+        <li class="dropdown pos-stc" dropdown>
+            <a href class="dropdown-toggle" dropdown-toggle>
+                <span>Mega</span>
+                <span class="caret"></span>
+            </a>
+            <div class="dropdown-menu wrapper w-full bg-white">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="m-l-xs m-t-xs m-b-xs font-bold">Pages <span class="badge badge-sm bg-success">10</span></div>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <ul class="list-unstyled l-h-2x">
+                                    <li>
+                                        <a href><i class="fa fa-fw fa-angle-right text-muted m-r-xs"></i>Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href><i class="fa fa-fw fa-angle-right text-muted m-r-xs"></i>Post</a>
+                                    </li>
+                                    <li>
+                                        <a href><i class="fa fa-fw fa-angle-right text-muted m-r-xs"></i>Search</a>
+                                    </li>
+                                    <li>
+                                        <a href><i class="fa fa-fw fa-angle-right text-muted m-r-xs"></i>Invoice</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-6">
+                                <ul class="list-unstyled l-h-2x">
+                                    <li>
+                                        <a href><i class="fa fa-fw fa-angle-right text-muted m-r-xs"></i>Price</a>
+                                    </li>
+                                    <li>
+                                        <a href><i class="fa fa-fw fa-angle-right text-muted m-r-xs"></i>Lock screen</a>
+                                    </li>
+                                    <li>
+                                        <a href><i class="fa fa-fw fa-angle-right text-muted m-r-xs"></i>Sign in</a>
+                                    </li>
+                                    <li>
+                                        <a href><i class="fa fa-fw fa-angle-right text-muted m-r-xs"></i>Sign up</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 b-l b-light">
+                        <div class="m-l-xs m-t-xs m-b-xs font-bold">UI Kits <span class="label label-sm bg-primary">12</span></div>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <ul class="list-unstyled l-h-2x">
+                                    <li>
+                                        <a href><i class="fa fa-fw fa-angle-right text-muted m-r-xs"></i>Buttons</a>
+                                    </li>
+                                    <li>
+                                        <a href><i class="fa fa-fw fa-angle-right text-muted m-r-xs"></i>Icons <span class="badge badge-sm bg-warning">1000+</span></a>
+                                    </li>
+                                    <li>
+                                        <a href><i class="fa fa-fw fa-angle-right text-muted m-r-xs"></i>Grid</a>
+                                    </li>
+                                    <li>
+                                        <a href><i class="fa fa-fw fa-angle-right text-muted m-r-xs"></i>Widgets</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-6">
+                                <ul class="list-unstyled l-h-2x">
+                                    <li>
+                                        <a href><i class="fa fa-fw fa-angle-right text-muted m-r-xs"></i>Bootstap</a>
+                                    </li>
+                                    <li>
+                                        <a href><i class="fa fa-fw fa-angle-right text-muted m-r-xs"></i>Sortable</a>
+                                    </li>
+                                    <li>
+                                        <a href><i class="fa fa-fw fa-angle-right text-muted m-r-xs"></i>Portlet</a>
+                                    </li>
+                                    <li>
+                                        <a href><i class="fa fa-fw fa-angle-right text-muted m-r-xs"></i>Timeline</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 b-l b-light">
+                        <div class="m-l-xs m-t-xs m-b-sm font-bold">Analysis</div>
+                        <div class="text-center">
+                            <div class="inline">
+                                <div ui-jq="easyPieChart" ui-options="{
+                          percent: 65,
+                          lineWidth: 50,
+                          trackColor: '{{app.color.light}}',
+                          barColor: '{{app.color.info}}',
+                          scaleColor: false,
+                          size: 100,
+                          rotate: 90,
+                          lineCap: 'butt',
+                          animate: 2000
+                        }">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="menu-title">
-            Navigation
-            <div class="pull-right menu-settings">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true" data-delay="300">
-                    <i class="icon-settings"></i>
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="#" id="reorder-menu" class="reorder-menu">Reorder menu</a></li>
-                    <li><a href="#" id="remove-menu" class="remove-menu">Remove elements</a></li>
-                    <li><a href="#" id="hide-top-sidebar" class="hide-top-sidebar">Hide user &amp; search</a></li>
-                </ul>
-            </div>
-        </div>
-        <ul class="nav nav-sidebar">
-            <li class=" nav-active active"><a href="dashboard.html"><i class="icon-home"></i><span>Dashboard</span></a></li>
-            <li class="nav-parent">
-                <a href="#"><i class="icon-puzzle"></i><span>Builder</span> <span class="fa arrow"></span></a>
-                <ul class="children collapse">
-                    <li><a target="_blank" href="../../admin-builder/index.html"> Admin</a></li>
-                    <li><a href="page-builder/index.html"> Page</a></li>
-                    <li><a href="ecommerce-pricing-table.html"> Pricing Table</a></li>
-                </ul>
-            </li>
-            <li class="nav-parent">
-                <a href="#"><i class="icon-bulb"></i><span>Mailbox</span> <span class="fa arrow"></span></a>
-                <ul class="children collapse">
-                    <li><a href="mailbox.html"> Inbox</a></li>
-                    <li><a href="mailbox-send.html"> Send Email</a></li>
-                </ul>
-            </li>
-            <li class="nav-parent">
-                <a href=""><i class="icon-screen-desktop"></i><span>UI Elements</span><span class="fa arrow"></span></a>
-                <ul class="children collapse">
-                    <li><a href="ui-buttons.html"> Buttons</a></li>
-                    <li><a href="ui-components.html"> Components</a></li>
-                    <li><a href="ui-tabs.html"> Tabs</a></li>
-                    <li><a href="ui-animations.html"> Animations CSS3</a></li>
-                    <li><a href="ui-icons.html"> Icons</a></li>
-                    <li><a href="ui-portlets.html"> Portlets</a></li>
-                    <li><a href="ui-nestable-list.html"> Nestable List</a></li>
-                    <li><a href="ui-tree-view.html"> Tree View</a></li>
-                    <li><a href="ui-modals.html"> Modals</a></li>
-                    <li><a href="ui-notifications.html"> Notifications</a></li>
-                    <li><a href="ui-typography.html"> Typography</a></li>
-                    <li><a href="ui-helper.html"> Helper Classes</a></li>
-                </ul>
-            </li>
-            <li class="nav-parent">
-                <a href=""><i class="icon-layers"></i><span>Layouts</span><span class="fa arrow"></span></a>
-                <ul class="children collapse">
-                    <li><a href="layouts-api.html"> Layout API</a></li>
-                    <li><a href="layout-topbar-menu.html"> Topbar Menu</a></li>
-                    <li><a href="layout-topbar-mega-menu.html"> Topbar Mega Menu</a></li>
-                    <li><a href="layout-topbar-mega-menu-dark.html"> Topbar Mega Dark</a></li>
-                    <li><a href="layout-sidebar-hover.html"> Sidebar on Hover</a></li>
-                    <li><a href="layout-submenu-hover.html"> Sidebar Submenu Hover</a></li>
-                    <li><a href="layout-boxed.html"> Boxed Layout</a></li>
-                </ul>
-            </li>
-            <li class="nav-parent">
-                <a href=""><i class="icon-note"></i><span>Forms </span><span class="fa arrow"></span></a>
-                <ul class="children collapse">
-                    <li><a href="forms.html"> Forms Elements</a></li>
-                    <li><a href="forms-validation.html"> Forms Validation</a></li>
-                    <li><a href="forms-plugins.html"> Advanced Plugins</a></li>
-                    <li><a href="forms-wizard.html"> <span class="pull-right badge badge-danger">low</span> <span>Form Wizard</span></a></li>
-                    <li><a href="forms-sliders.html"> Sliders</a></li>
-                    <li><a href="forms-editors.html"> Text Editors</a></li>
-                    <li><a href="forms-input-masks.html"> Input Masks</a></li>
-                </ul>
-            </li>
-            <li class="nav-parent">
-                <a href=""><i class="fa fa-table"></i><span>Tables</span><span class="fa arrow"></span></a>
-                <ul class="children collapse">
-                    <li><a href="tables.html"> Tables Styling</a></li>
-                    <li><a href="tables-dynamic.html"> Tables Dynamic</a></li>
-                    <li><a href="tables-filter.html"> Tables Filter</a></li>
-                    <li><a href="tables-editable.html"> Tables Editable</a></li>
-                </ul>
-            </li>
-            <li class="nav-parent">
-                <a href=""><i class="icon-bar-chart"></i><span>Charts </span><span class="fa arrow"></span></a>
-                <ul class="children collapse">
-                    <li><a href="charts.html"> Charts</a></li>
-                    <li><a href="charts-finance.html"> Financial Charts</a></li>
-                </ul>
-            </li>
-            <li class="nav-parent">
-                <a href=""><i class="icon-picture"></i><span>Medias</span><span class="fa arrow"></span></a>
-                <ul class="children collapse">
-                    <li><a href="medias-image-croping.html"> Images Croping</a></li>
-                    <li><a href="medias-gallery-sortable.html"> Gallery Sortable</a></li>
-                    <li><a href="medias-hover-effects.html"> <span class="pull-right badge badge-primary">12</span> Hover Effects</a></li>
-                </ul>
-            </li>
-            <li class="nav-parent">
-                <a href=""><i class="icon-docs"></i><span>Pages </span><span class="fa arrow"></span></a>
-                <ul class="children collapse">
-                    <li><a href="page-timeline.html"> Timeline</a></li>
-                    <li><a href="page-404.html"> Error 404</a></li>
-                    <li><a href="page-500.html"> Error 500</a></li>
-                    <li><a href="page-blank.html"> Blank Page</a></li>
-                    <li><a href="page-contact.html"> Contact</a></li>
-                </ul>
-            </li>
-            <li class="nav-parent">
-                <a href=""><i class="icon-user"></i><span>User </span><span class="fa arrow"></span></a>
-                <ul class="children collapse">
-                    <li><a href="user-profil.html"> <span class="pull-right badge badge-danger">Hot</span> Profil</a></li>
-                    <li><a href="user-lockscreen.html"> Lockscreen</a></li>
-                    <li><a href="user-login-v1.html"> Login / Register</a></li>
-                    <li><a href="user-login-v2.html"> Login / Register v2</a></li>
-                    <li><a href="user-session-timeout.html"> Session Timeout</a></li>
-                </ul>
-            </li>
-            <li class="nav-parent">
-                <a href=""><i class="icon-basket"></i><span>eCommerce </span><span class="fa arrow"></span></a>
-                <ul class="children collapse">
-                    <li><a href="ecommerce-cart.html"> Shopping Cart</a></li>
-                    <li><a href="ecommerce-invoice.html"> Invoice</a></li>
-                    <li><a href="ecommerce-pricing-table.html"><span class="pull-right badge badge-success">5</span> Pricing Table</a></li>
-                </ul>
-            </li>
-            <li class="nav-parent">
-                <a href=""><i class="icon-cup"></i><span>Extra </span><span class="fa arrow"></span></a>
-                <ul class="children collapse">
-                    <li><a href="extra-fullcalendar.html"><span class="pull-right badge badge-primary">New</span> Fullcalendar</a></li>
-                    <li><a href="extra-widgets.html"> Widgets</a></li>
-                    <li><a href="page-coming-soon.html"> Coming Soon</a></li>
-                    <li><a href="extra-sliders.html"> Sliders</a></li>
-                    <li><a href="maps-google.html"> Google Maps</a></li>
-                    <li><a href="maps-vector.html"> Vector Maps</a></li>
-                    <li><a href="extra-translation.html"> Translation</a></li>
-                </ul>
-            </li>
-        </ul>
-        <!-- SIDEBAR WIDGET FOLDERS -->
-        <div class="sidebar-widgets">
-            <p class="menu-title widget-title">Folders <span class="pull-right"><a href="#" class="new-folder"> <i class="icon-plus"></i></a></span></p>
-            <ul class="folders">
+        </li>
+        <li class="dropdown" dropdown>
+            <a href class="dropdown-toggle" dropdown-toggle>
+                <i class="fa fa-fw fa-plus visible-xs-inline-block"></i>
+                <span translate="header.navbar.new.NEW">New</span> <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="#" translate="header.navbar.new.PROJECT">Projects</a></li>
                 <li>
-                    <a href="#"><i class="icon-doc c-primary"></i>My documents</a>
+                    <a href>
+                        <span class="badge bg-info pull-right">5</span>
+                        <span translate="header.navbar.new.TASK">Task</span>
+                    </a>
                 </li>
+                <li><a href translate="header.navbar.new.USER">User</a></li>
+                <li class="divider"></li>
                 <li>
-                    <a href="#"><i class="icon-picture"></i>My images</a>
-                </li>
-                <li>
-                    <a href="#"><i class="icon-lock"></i>Secure data</a>
-                </li>
-                <li class="add-folder">
-                    <input type="text" placeholder="Folder's name..." class="form-control input-sm">
+                    <a href>
+                        <span class="badge bg-danger pull-right">4</span>
+                        <span translate="header.navbar.new.EMAIL">Email</span>
+                    </a>
                 </li>
             </ul>
+        </li>
+    </ul>
+    <!-- / link and dropdown -->
+    <!-- search form -->
+    <form class="navbar-form navbar-form-sm navbar-left shift" ui-shift="prependTo" target=".navbar-collapse" role="search" ng-controller="TypeaheadDemoCtrl">
+        <div class="form-group">
+            <div class="input-group">
+                <input type="text" ng-model="selected" typeahead="state for state in states | filter:$viewValue | limitTo:8" class="form-control input-sm bg-light no-border rounded padder" placeholder="Search projects...">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-sm bg-light rounded"><i class="fa fa-search"></i></button>
+                </span>
+            </div>
         </div>
-        <div class="sidebar-footer clearfix">
-            <a class="pull-left footer-settings" href="#" data-rel="tooltip" data-placement="top" data-original-title="Settings">
-                <i class="icon-settings"></i>
+    </form>
+    <!-- / search form -->
+    <!-- nabar right -->
+    <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown hidden-sm" is-open="lang.isopen" dropdown>
+            <a href class="dropdown-toggle" dropdown-toggle>
+                {{selectLang}} <b class="caret"></b>
             </a>
-            <a class="pull-left toggle_fullscreen" href="#" data-rel="tooltip" data-placement="top" data-original-title="Fullscreen">
-                <i class="icon-size-fullscreen"></i>
+            <!-- dropdown -->
+            <ul class="dropdown-menu animated fadeInRight w">
+                <li ng-repeat="(langKey, label) in langs">
+                    <a ng-click="setLang(langKey, $event)" href>{{label}}</a>
+                </li>
+            </ul>
+            <!-- / dropdown -->
+        </li>
+        <li class="hidden-xs">
+            <a ui-fullscreen></a>
+        </li>
+        <li class="dropdown" dropdown>
+            <a href class="dropdown-toggle" dropdown-toggle>
+                <i class="icon-bell fa-fw"></i>
+                <span class="visible-xs-inline">Notifications</span>
+                <span class="badge badge-sm up bg-danger pull-right-xs">2</span>
             </a>
-            <a class="pull-left" href="user-lockscreen.html" data-rel="tooltip" data-placement="top" data-original-title="Lockscreen">
-                <i class="icon-lock"></i>
+            <!-- dropdown -->
+            <div class="dropdown-menu w-xl animated fadeInUp">
+                <div class="panel bg-white">
+                    <div class="panel-heading b-light bg-light">
+                        <strong>You have <span>2</span> notifications</strong>
+                    </div>
+                    <div class="list-group">
+                        <a href class="list-group-item">
+                            <span class="pull-left m-r thumb-sm">
+                                <img src="img/a0.jpg" alt="..." class="img-circle">
+                            </span>
+                            <span class="clear block m-b-none">
+                                Use awesome animate.css<br>
+                                <small class="text-muted">10 minutes ago</small>
+                            </span>
+                        </a>
+                        <a href class="list-group-item">
+                            <span class="clear block m-b-none">
+                                1.0 initial released<br>
+                                <small class="text-muted">1 hour ago</small>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="panel-footer text-sm">
+                        <a href class="pull-right"><i class="fa fa-cog"></i></a>
+                        <a href="#notes" data-toggle="class:show animated fadeInRight">See all the notifications</a>
+                    </div>
+                </div>
+            </div>
+            <!-- / dropdown -->
+        </li>
+        <li class="dropdown" dropdown>
+            <a href class="dropdown-toggle clear" dropdown-toggle>
+                <span class="thumb-sm avatar pull-right m-t-n-sm m-b-n-sm m-l-sm">
+                    <img src="img/a0.jpg" alt="...">
+                    <i class="on md b-white bottom"></i>
+                </span>
+                <span class="hidden-sm hidden-md">John.Smith</span> <b class="caret"></b>
             </a>
-            <a class="pull-left btn-effect" href="user-login-v1.html" data-modal="modal-1" data-rel="tooltip" data-placement="top" data-original-title="Logout">
-                <i class="icon-power"></i>
-            </a>
-        </div>
-    </div>
+            <!-- dropdown -->
+            <ul class="dropdown-menu animated fadeInRight w">
+                <li class="wrapper b-b m-b-sm bg-light m-t-n-xs">
+                    <div>
+                        <p>300mb of 500mb used</p>
+                    </div>
+                    <progressbar value="60" class="progress-xs m-b-none bg-white"></progressbar>
+                </li>
+                <li>
+                    <a href>
+                        <span class="badge bg-danger pull-right">30%</span>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a ui-sref="app.page.profile">Profile</a>
+                </li>
+                <li>
+                    <a ui-sref="app.docs">
+                        <span class="label bg-info pull-right">new</span>
+                        Help
+                    </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <a ui-sref="access.signin">Logout</a>
+                </li>
+            </ul>
+            <!-- / dropdown -->
+        </li>
+    </ul>
+    <!-- / navbar right -->
+
 </div>
+<!-- / navbar collapse -->

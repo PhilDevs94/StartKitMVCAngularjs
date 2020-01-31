@@ -1109,11 +1109,11 @@
     <Content Include="Views\Person\Index.cshtml" />
     <Content Include="Views\Home\App.cshtml" />
     <Content Include="Views\Task\Index.cshtml" />
-    <Content Include="Views\Home\SideBar.cshtml" />
     <Content Include="Views\Home\Header.cshtml" />
     <Content Include="Scripts\version.json" />
     <Content Include="Views\Home\Dashboard.cshtml" />
     <Content Include="Views\Home\Setting.cshtml" />
+    <Content Include="Views\Home\Aside.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

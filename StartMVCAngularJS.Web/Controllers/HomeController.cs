@@ -17,7 +17,7 @@ namespace StartMVCAngularJS.Web.Controllers
         {
             return PartialView();
         }
-        public ActionResult SideBar()
+        public ActionResult Aside()
         {
             return PartialView();
         }
