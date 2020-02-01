@@ -1,9 +1,9 @@
 ﻿  <!-- navbar -->
-<div data-ng-include=" 'home/Header' " class="app-header navbar">
+<div data-ng-include=" 'home/header' " class="app-header navbar">
 </div>
 <!-- / navbar -->
 <!-- menu -->
-<div data-ng-include=" 'home/SideBar' " class="app-aside hidden-xs {{app.setting.asideColor}}">
+<div data-ng-include=" 'home/aside' " class="app-aside hidden-xs {{app.setting.asideColor}}">
 </div>
 <!-- / menu -->
 <!-- content -->
@@ -17,9 +17,9 @@
 <!-- /content -->
 <!-- footer -->
 <div class="app-footer wrapper b-t bg-light">
-    <span class="pull-right">Test<a href="#" ui-scroll-to="app" class="m-l-sm text-muted"><i class="fa fa-long-arrow-up"></i></a></span>
+    <span class="pull-right">{{app.version}}<a href="#" ui-scroll-to="app" class="m-l-sm text-muted"><i class="fa fa-long-arrow-up"></i></a></span>
 </div>
 <!-- / footer -->
 
-<div data-ng-include=" 'home/Setting' " class="settings panel panel-default">
+<div data-ng-include=" 'home/setting' " class="settings panel panel-default">
 </div>

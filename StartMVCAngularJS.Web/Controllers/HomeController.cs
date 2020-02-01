@@ -29,6 +29,10 @@ namespace StartMVCAngularJS.Web.Controllers
         {
             return PartialView();
         }
+        public ActionResult Nav()
+        {
+            return PartialView();
+        }
         public ActionResult Setting()
         {
             return PartialView();

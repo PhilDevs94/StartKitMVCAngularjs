@@ -1114,6 +1114,7 @@
     <Content Include="Views\Home\Dashboard.cshtml" />
     <Content Include="Views\Home\Setting.cshtml" />
     <Content Include="Views\Home\Aside.cshtml" />
+    <Content Include="Views\Home\Nav.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
