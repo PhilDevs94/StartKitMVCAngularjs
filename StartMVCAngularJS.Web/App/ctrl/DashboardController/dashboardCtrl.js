@@ -2,7 +2,6 @@
 
 angular.module('app')
     .controller('DashboardCtrl', ['$scope', '$state', '$stateParams', '$http', 'toaster', function ($scope, $state, $stateParams, $http, toaster){
-        var vm = this;
         var canvasctx = document.getElementById('canvasChart').getContext('2d');
         var piectx = document.getElementById('pieChart').getContext('2d');
         var colandlinectx = document.getElementById('columnAndLineChart').getContext('2d');
@@ -163,4 +162,5 @@ angular.module('app')
               }
           ]
       };
-    }]);
+    }
+]);
