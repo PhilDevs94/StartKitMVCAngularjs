@@ -24,7 +24,7 @@ angular.module('app')
         var canvasData = {
           labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
           datasets: [{
-              label: 'Thống kê cuộc gọi hàng tháng',
+              label: 'Monthly Sales',
               backgroundColor: 'rgb(255, 99, 132)',
               borderColor: 'rgb(255, 99, 132)',
               data: [2000, 3500, 3005, 2498, 1220, 2230, 2045]
@@ -47,7 +47,7 @@ angular.module('app')
         var barData = {
           labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
           datasets: [{
-              label: 'Thống kê cuộc gọi hàng tháng',
+              label: 'Monthly call',
               backgroundColor: 'rgb(255, 99, 132)',
               borderColor: 'rgb(255, 99, 132)',
               data: [2000, 3500, 3005, 2498, 1220, 2230, 2045]

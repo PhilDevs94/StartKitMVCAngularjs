@@ -12,7 +12,7 @@ angular.module('app')
 
       // config
       $scope.app = {
-        name: 'Angular Theme',
+        name: 'Starter Kit',
         version: '2.2.0',
         // for chart colors
         color: {

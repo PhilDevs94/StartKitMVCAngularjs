@@ -13,7 +13,7 @@ angular.module('app')
     ]
   )
   .config(
-    [          '$stateProvider', '$urlRouterProvider', 'JQ_CONFIG', 'MODULE_CONFIG', 
+    ['$stateProvider', '$urlRouterProvider', 'JQ_CONFIG', 'MODULE_CONFIG', 
       function ($stateProvider,   $urlRouterProvider, JQ_CONFIG, MODULE_CONFIG) {
           var layout = "home/app";        
           $stateProvider
@@ -30,7 +30,26 @@ angular.module('app')
                           return $ocLazyLoad.load('/App/ctrl/DashboardController/dashboardCtrl.js');
                       }]
                   }
-              });
+              })
+              .state('app.person',{
+                url:'/person',
+                templateUrl:'person/index',
+                resolve:{
+                  devs:['$ocLazyLoad', function($ocLazyLoad){
+                    return $ocLazyLoad.load('/App/ctrl/PersonController/personCtrl.js');
+                  }]
+                }
+              })
+              .state('app.task',{
+                url:'/task',
+                templateUrl:'task/index',
+                resolve:{
+                  devs:['$ocLazyLoad', function($ocLazyLoad){
+                    return $ocLazyLoad.load('/App/ctrl/TaskController/taskCtrl.js');
+                  }]
+                }
+              })
+              ;
           $urlRouterProvider.otherwise('app/dashboard');
           function load(srcs, callback) {
             return {
