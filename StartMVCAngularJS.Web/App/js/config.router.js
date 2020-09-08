@@ -35,7 +35,7 @@ angular.module('app')
                 url:'/person',
                 templateUrl:'person/index',
                 resolve:{
-                  devs:['$ocLazyLoad', function($ocLazyLoad){
+                  deps:['$ocLazyLoad', function($ocLazyLoad){
                     return $ocLazyLoad.load('/App/ctrl/PersonController/personCtrl.js');
                   }]
                 }
@@ -44,7 +44,7 @@ angular.module('app')
                 url:'/task',
                 templateUrl:'task/index',
                 resolve:{
-                  devs:['$ocLazyLoad', function($ocLazyLoad){
+                  deps:['$ocLazyLoad', function($ocLazyLoad){
                     return $ocLazyLoad.load('/App/ctrl/TaskController/taskCtrl.js');
                   }]
                 }
