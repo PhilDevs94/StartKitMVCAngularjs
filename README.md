@@ -24,7 +24,7 @@ Here are details for function and how to use each project:
   1. **js > config.router.js** : Containing the router of the web application.
   2. **js > main.js** : Containing some global variable you may want to keep or modified such as $scope, global variable for you can use in any controller
   3. **ctrl folder**: This folder is where you going to add your controller and handle data processing between front-end and back-end. 
-  4. Create new view: You can create new view through Controller in MVC project, the name should be as same as the name of the controller in angularjs for save time when you need to check back.
+  4. **Create new view**: You can create new view through Controller in MVC project, the name should be as same as the name of the controller in angularjs for save time when you need to check back.
 
 
 
