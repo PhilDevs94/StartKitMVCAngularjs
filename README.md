@@ -1,7 +1,7 @@
 # Start Kit .Net Framework Using MVC Pattern
 
 [![N|Solid](https://i.ibb.co/wCFZDtQ/logo.png)](https://nodesource.com/products/nsolid)
-
+![N|Solid](https://www.paypalobjects.com/favicon.ico) : Buy me a coffee via email **phildevs94@gmail.com**
 
 This project is built for who want a fast setup for your company or group or even your personal  project. I will give you guys an instruction to show you how to implement this project. 
 
@@ -26,7 +26,7 @@ Here are details for function and how to use each project:
   3. **ctrl folder**: This folder is where you going to add your controller and handle data processing between front-end and back-end. 
   4. **Create new view**: You can create new view through Controller in MVC project, the name should be as same as the name of the controller in angularjs for save time when you need to check back.
 
-
+![N|Solid](https://www.paypalobjects.com/favicon.ico) : A coffee just a few bucks im embrace me keep improving this **phildevs94@gmail.com**
 
 **Free Start Kit project, Hell Yeah!**
 
